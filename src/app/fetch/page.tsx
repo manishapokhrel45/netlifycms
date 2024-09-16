@@ -1,5 +1,5 @@
 // src/app/components/Fetch.tsx
-
+'use client';
 import React, { useState } from 'react';
 import { fetchProducts, createProduct, removeProduct } from '@/lib/api';
 import Image from 'next/image';
