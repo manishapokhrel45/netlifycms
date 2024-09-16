@@ -1,11 +1,10 @@
 import React from 'react';
-import Link from 'next/link'; // Use Next.js Link
-import Markdown from 'react-markdown'; // For rendering markdown
-import postlist from '../posts.json'; // Assuming your posts are stored in this JSON file
+import Link from 'next/link';
+import Markdown from 'react-markdown';
 import Image from 'next/image';
+import postlist from '../posts.json';
 
 const PostList = () => {
-  // Create excerpts for each post
   const excerptList = postlist.map((post) => {
     return post.content.split(' ').slice(0, 20).join(' ') + '...';
   });
